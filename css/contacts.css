@@ -1,0 +1,226 @@
+      /* Contacts */
+:root { 
+  --black: #252423;
+  --white: #F6F4F2;
+  --white-2: #FFF;
+  --grey: #b8b6b3;
+  --red: #FF4B4B;
+  --orange: #FF8F42;
+  --lightorange: #FFC730;
+  --yellow: #F6FF56;
+  --citrus: #A4FF4F;
+  --green: #18FF74;
+  --darkgreen: #00D672;
+  --turquoise: #3CFFEC;
+  --skyblue: #61C3FF;
+  --kingblue: #5A87FF;
+  --lavender: #8453E3;
+  --purple: #C26EFF;
+  --pink: #FB89FB;
+ 
+  --input-border-radius: .25rem;
+}
+
+.audiowide-regular {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+    font-style: Audiowide;
+    background-color: var(--black);
+    background-image: url('../assets/images/background.jpg');
+    background-size: 50%; 
+    color: var(--white);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+#contacts-container{
+    /*height: 100vh;*/
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+.big-centered-box{
+    margin-top:5%;
+    margin-bottom: 5%;
+    opacity: 95%;
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 10%;
+    /*height: 100%;*/
+    display: flex;
+    background-color: var(--black);
+    border-radius: 20px;
+    box-shadow: 9px 13px 41px 7px rgba(0,0,0,0.51);
+    -webkit-box-shadow: 9px 13px 41px 7px rgba(0,0,0,0.51);
+    -moz-box-shadow: 9px 13px 41px 7px rgba(0, 0, 0, 0.51);
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#card{
+    width: 90%;
+    position: relative;
+    overflow: hidden;
+}
+
+#BlurEllipse{ 
+    display: none;
+    z-index: 2;
+    position: absolute;
+    width: 1000px;
+    height: 1000px;
+    top: 0px;
+    left: 0px;
+    background: #636363;
+    background: radial-gradient(circle,rgba(99, 99, 99, 1) 0%, rgba(250, 250, 250, 0) 34%);
+}
+.contact-h1{
+    font-size: 3rem;
+    z-index: 100;
+}
+
+.contact-h2{
+    font-size: 2.5rem;
+    z-index: 100;
+}
+
+.name{
+    color:var(--kingblue);
+}
+
+
+
+.big-link{
+  color: var(--kingblue);
+  font-size: 2.5rem;
+  font-weight: bold;
+  z-index: 100;
+
+}
+
+        /* Shapes Effect */ 
+
+#shapes-container{
+    position: fixed;
+    overflow: hidden; 
+    width: 100%;
+    height: 100%;
+    z-index: -3;
+    /* Stoppa lo scrol orizzontale per le forme geometriche 
+    che escono dalla view */
+}
+
+.shape{
+   max-width:40vw;  /* Per impostare la grandezza generale delle forme */ 
+   max-height: 40vh;
+   position: fixed; /* Posizione in base alla view */
+   z-index: -2;
+}
+
+
+#shape-svg {
+    top:0;
+    left:0;
+}
+
+#triangle-svg{
+   top:0;
+   left:0;
+}
+
+#rectangle-svg{
+   top:0;
+   left:0;
+}
+
+#ellipse-svg{
+   top:0;
+   left:0;
+}
+
+#blur-screen {
+ 
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    z-index: -1;
+}
+
+#blur-screen-100 {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+    z-index: -1;
+} 
+
+    /* Animations */ 
+
+
+@media (max-width: 700px){ /* Aggiunta breakpoint*/
+    .contact-h1{
+        font-size: 2.5rem;
+    }
+
+    .contact-h2{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 600px){ /* Aggiunta breakpoint*/
+    .contact-h1{
+        font-size: 2rem;
+    }
+
+    .contact-h2{
+        font-size: 1rem;
+    }
+}
+
+
+@media (max-width: 400px){ /* Aggiunta breakpoint*/
+
+    .big-centered-box{
+        height: 80%;
+    }
+
+    .contact-h1{
+        font-size: 2rem;
+    }
+
+    .contact-h2{
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 300px){ /* Aggiunta breakpoint*/
+
+    .big-centered-box{
+        height: 90%;
+    }
+
+    .contact-h1{
+        font-size: 0.9rem;
+    }
+
+    .contact-h2{
+        font-size: 0.75rem;
+    }
+}
