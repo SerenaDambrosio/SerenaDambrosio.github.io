@@ -175,3 +175,13 @@ body {
   font-size: 2rem;
   color: var(--kingblue);
 }
+@media (max-width: 500px){ /* Aggiunta breakpoint*/
+  .footer-section{
+    padding-left: 5%;
+    align-items: flex-start;
+  }
+
+  .footer-h2{
+    font-size: 1rem;
+  }
+}
