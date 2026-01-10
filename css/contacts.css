@@ -19,6 +19,8 @@
   --pink: #FB89FB;
  
   --input-border-radius: .25rem;
+  --font-size: 14px;
+  --golden-ratio : 1.618;
 }
 
 .audiowide-regular {
@@ -84,13 +86,18 @@ body {
     background: #636363;
     background: radial-gradient(circle,rgba(99, 99, 99, 1) 0%, rgba(250, 250, 250, 0) 34%);
 }
+
+#contact_me-text{
+    font-size: 6.854rem ;
+}
+
 .contact-h1{
-    font-size: 3rem;
+    font-size: 4.36rem;
     z-index: 100;
 }
 
 .contact-h2{
-    font-size: 2.5rem;
+    font-size: 2.618rem;
     z-index: 100;
 }
 
@@ -105,6 +112,7 @@ body {
   font-size: 2.5rem;
   font-weight: bold;
   z-index: 100;
+  word-wrap: break-word;
 
 }
 
@@ -175,22 +183,53 @@ body {
 
 
 @media (max-width: 700px){ /* Aggiunta breakpoint*/
+    #contact_me-text{
+        font-size: 4.236rem ;
+    }
+
+    #email-1{
+        font-size: 1.618rem;
+    }
+
+    #email-2{
+        font-size: 1.618rem;
+    }
+
     .contact-h1{
-        font-size: 2.5rem;
+        font-size: 2.618rem;
     }
 
     .contact-h2{
-        font-size: 1.5rem;
+        font-size: 2.618rem;
     }
 }
 
 @media (max-width: 600px){ /* Aggiunta breakpoint*/
+
+    #contact_me-text{
+        font-size: 3.236rem ;
+    }
+
+    #email-1{
+        font-size: 1.2rem;
+    }
+
+    #email-2{
+        font-size: 1.2rem;
+    }
     .contact-h1{
-        font-size: 2rem;
+        font-size: 1.618rem;
     }
 
     .contact-h2{
-        font-size: 1rem;
+        font-size: 1.618rem;
+    }
+    .big-link{
+        font-size: 1.618rem;
+    }
+
+    #index-link{
+        font-size: 3.168rem;
     }
 }
 
@@ -201,26 +240,63 @@ body {
         height: 80%;
     }
 
+     #contact_me-text{
+        font-size: 2.618rem ;
+    }
+
+    #email-1{
+        font-size: 1rem;
+    }
+
+    #email-2{
+        font-size: 1rem;
+    }
     .contact-h1{
-        font-size: 2rem;
+        font-size: 1.618rem;
     }
 
     .contact-h2{
+        font-size: 1.618rem;
+    }
+    .big-link{
         font-size: 1.2rem;
+    }
+
+    #index-link{
+        font-size: 2.168rem;
     }
 }
 
 @media (max-width: 300px){ /* Aggiunta breakpoint*/
+    #contact_me-text{
+        font-size: 1rem ;
+    }
+
+    #email-1{
+        font-size: 1rem;
+    }
+
+    #email-2{
+        font-size: 1rem;
+    }
 
     .big-centered-box{
         height: 90%;
     }
 
     .contact-h1{
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 
     .contact-h2{
-        font-size: 0.75rem;
+        font-size: 1rem;
+    }
+
+    .big-link{
+        font-size: 1rem;
+    }
+
+    #index-link{
+        font-size: 2.168rem;
     }
 }
